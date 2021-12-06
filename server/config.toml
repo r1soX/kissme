@@ -1,0 +1,2 @@
+bind_addr = ":80"
+database_url = "host=localhost port=5432 user=postgres password=15253565vV dbname=ksme sslmode=disable"
