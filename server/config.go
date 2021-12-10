@@ -21,7 +21,7 @@ var configToml []byte
 func NewConfig() *Config {
 
 	config := &Config{
-		BindAddr: ":80",
+		BindAddr: ":8080",
 	}
 
 	if len(configToml) == 0 {

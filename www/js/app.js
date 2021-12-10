@@ -100,8 +100,8 @@ var app = new Vue({
                 }
                 case "2": {
                     //ROSE
-                    // BUY(6); good_id:I, cost:I, target_id:I, data:I, price_type:B, count:I, hash:S, params: S
-                    // [2, 10, 50958421, 9845, 0, 1, "5a2410809e4a9e24ad7ce07f89dd2a18", ""]
+                    //  BUY(6); good_id:I, cost:I, target_id:I, data:I, price_type:B, count:I, screen_type:B
+                    // [231, 10, 50958421, 8041, 0, 1, 4]
                     let prize = {
                         good_id: 231,
                         cost: 10,
@@ -109,8 +109,7 @@ var app = new Vue({
                         data: 8041,
                         price_type: 0,
                         count: parseInt(this.count, 10),
-                        hash: '5a3f246110761d3e9d5d344af9b5aaa0',
-                        params: "{\"category\": 70, \"screen\": 4}"
+                        screen_type: 4
                     }
                     this.prizeBotSend(prize)
                     return
@@ -125,8 +124,7 @@ var app = new Vue({
                         data: 10120,
                         price_type: 0,
                         count: parseInt(this.count, 10),
-                        hash: "5a3f246110761d3e9d5d344af9b5aaa0",
-                        params: "{\"category\": 70, \"screen\": 4}"
+                        screen_type: 4
                     }
                     this.prizeBotSend(prize)
                     return
@@ -140,7 +138,8 @@ var app = new Vue({
                         target_id: parseInt(this.target_id, 10),
                         data: 0,
                         price_type: 0,
-                        count: parseInt(this.count, 10)
+                        count: parseInt(this.count, 10),
+                        screen_type: 4
                     }
                     this.prizeBotSend(prize)
                     return
@@ -155,8 +154,7 @@ var app = new Vue({
                         data: 10125,
                         price_type: 0,
                         count: parseInt(this.count, 10),
-                        hash: "dcddfb78c71cb85d2e7cd978d46f2ee5",
-                        params: "{\"category\": 70, \"screen\": 4}"
+                        screen_type: 4
                     }
                     this.prizeBotSend(prize)
                     return

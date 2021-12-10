@@ -294,6 +294,7 @@ func (c *WSConn) cmdPrizeBot(data map[string]interface{}) {
 		int(data["data"].(float64)),
 		byte(data["price_type"].(float64)),
 		int(1),
+		int(4),
 	)
 
 	for _, v := range uids {
