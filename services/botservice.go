@@ -3,13 +3,13 @@ package services
 import (
 	"time"
 
-	"github.com/suvrick/go-kiss-server/errors"
-	"github.com/suvrick/go-kiss-server/game/models"
-	"github.com/suvrick/go-kiss-server/game/packets/encode"
-	"github.com/suvrick/go-kiss-server/game/ws"
-	"github.com/suvrick/go-kiss-server/model"
-	"github.com/suvrick/go-kiss-server/repositories"
-	"github.com/suvrick/go-kiss-server/until"
+	"github.com/r1soX/kissme/errors"
+	"github.com/r1soX/kissme/game/models"
+	"github.com/r1soX/kissme/game/packets/encode"
+	"github.com/r1soX/kissme/game/ws"
+	"github.com/r1soX/kissme/model"
+	"github.com/r1soX/kissme/repositories"
+	"github.com/r1soX/kissme/until"
 )
 
 // BotService ...

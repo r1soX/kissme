@@ -1,6 +1,6 @@
 package client
 
-import "github.com/suvrick/go-kiss-server/game/packets/encode"
+import "github.com/r1soX/kissme/game/packets/encode"
 
 // RewardListClientPacket ...
 type RewardListClientPacket struct {

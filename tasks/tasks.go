@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/suvrick/go-kiss-server/game/models"
-	"github.com/suvrick/go-kiss-server/game/ws"
-	"github.com/suvrick/go-kiss-server/repositories"
-	"github.com/suvrick/go-kiss-server/services"
+	"github.com/r1soX/kissme/game/models"
+	"github.com/r1soX/kissme/game/ws"
+	"github.com/r1soX/kissme/repositories"
+	"github.com/r1soX/kissme/services"
 )
 
 type TaskManager struct {

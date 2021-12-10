@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/suvrick/go-kiss-server/game/models"
-	"github.com/suvrick/go-kiss-server/game/packets/decode"
-	"github.com/suvrick/go-kiss-server/game/packets/encode"
+	"github.com/r1soX/kissme/game/models"
+	"github.com/r1soX/kissme/game/packets/decode"
+	"github.com/r1soX/kissme/game/packets/encode"
 
 	wss "github.com/gorilla/websocket"
 )

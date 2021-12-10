@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/suvrick/go-kiss-server/game/models"
-	"github.com/suvrick/go-kiss-server/game/ws"
+	"github.com/r1soX/kissme/game/models"
+	"github.com/r1soX/kissme/game/ws"
 )
 
 func TestNewSocket(t *testing.T) {

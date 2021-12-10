@@ -3,7 +3,7 @@ package server
 import (
 	"io"
 
-	"github.com/suvrick/go-kiss-server/game/packets/decode"
+	"github.com/r1soX/kissme/game/packets/decode"
 )
 
 /*
@@ -68,7 +68,7 @@ type InfoServerPacket struct {
 	// Color         byte
 	Kisses int32
 	//Hearts        int32
-	Gifts int32
+	//Gifts int32
 }
 
 // Parse ...

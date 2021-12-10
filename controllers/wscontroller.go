@@ -9,11 +9,11 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
-	"github.com/suvrick/go-kiss-server/game/packets/client"
-	"github.com/suvrick/go-kiss-server/middlewares"
-	"github.com/suvrick/go-kiss-server/model"
-	"github.com/suvrick/go-kiss-server/services"
-	"github.com/suvrick/go-kiss-server/session"
+	"github.com/r1soX/kissme/game/packets/client"
+	"github.com/r1soX/kissme/middlewares"
+	"github.com/r1soX/kissme/model"
+	"github.com/r1soX/kissme/services"
+	"github.com/r1soX/kissme/session"
 )
 
 type WsController struct {

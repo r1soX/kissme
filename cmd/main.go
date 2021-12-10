@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/suvrick/go-kiss-server/server"
+	"github.com/r1soX/kissme/server"
 )
 
 func main() {

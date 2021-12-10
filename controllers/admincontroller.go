@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/suvrick/go-kiss-server/errors"
-	"github.com/suvrick/go-kiss-server/middlewares"
-	"github.com/suvrick/go-kiss-server/services"
-	"github.com/suvrick/go-kiss-server/until"
+	"github.com/r1soX/kissme/errors"
+	"github.com/r1soX/kissme/middlewares"
+	"github.com/r1soX/kissme/services"
+	"github.com/r1soX/kissme/until"
 )
 
 // AdminController ...

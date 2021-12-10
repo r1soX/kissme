@@ -1,6 +1,6 @@
 package client
 
-import "github.com/suvrick/go-kiss-server/game/packets/encode"
+import "github.com/r1soX/kissme/game/packets/encode"
 
 // "IIIIBI,SS",
 // BUY(6); good_id:I, cost:I, target_id:I, data:I, price_type:B, count:I, hash:S, params: S

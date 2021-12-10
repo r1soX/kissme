@@ -1,4 +1,4 @@
-module github.com/suvrick/go-kiss-server
+module github.com/r1soX/kissme
 
 go 1.16
 

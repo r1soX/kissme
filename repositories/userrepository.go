@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"github.com/suvrick/go-kiss-server/model"
+	"github.com/r1soX/kissme/model"
 	"gorm.io/gorm"
 )
 

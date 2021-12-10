@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/suvrick/go-kiss-server/game/packets/server"
+	"github.com/r1soX/kissme/game/packets/server"
 )
 
 //Авторизация игрока
@@ -57,13 +57,11 @@ func (gs *GameSock) infoReceive(msg io.Reader) {
 	gs.bot.Avatar = strings.Split(info.Avatar, "?")[0]
 	gs.bot.Profile = info.Profile
 	gs.bot.Kisses = info.Kisses
-	gs.bot.Gifts = info.Gifts
 
 	gs.bot.LogINFO("InfoServerPacket", fmt.Sprintf("Set name: %v", gs.bot.Name))
 	gs.bot.LogINFO("InfoServerPacket", fmt.Sprintf("Set avatar: %v", gs.bot.Avatar))
 	gs.bot.LogINFO("InfoServerPacket", fmt.Sprintf("Set profile: %v", gs.bot.Profile))
 	gs.bot.LogINFO("InfoServerPacket", fmt.Sprintf("Set Kisses: %v", gs.bot.Kisses))
-	gs.bot.LogINFO("InfoServerPacket", fmt.Sprintf("Set Gifts: %v", gs.bot.Gifts))
 
 }
 

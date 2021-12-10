@@ -4,8 +4,8 @@ import (
 	"errors"
 
 	"github.com/gin-gonic/gin"
-	"github.com/suvrick/go-kiss-server/model"
-	"github.com/suvrick/go-kiss-server/until"
+	"github.com/r1soX/kissme/model"
+	"github.com/r1soX/kissme/until"
 )
 
 // AdminMiddleware ...

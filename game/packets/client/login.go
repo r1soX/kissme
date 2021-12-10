@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/suvrick/go-kiss-server/game/packets/encode"
-	"github.com/suvrick/go-kiss-server/game/parser"
+	"github.com/r1soX/kissme/game/packets/encode"
+	"github.com/r1soX/kissme/game/parser"
 )
 
 // "LBBS,BSIIBSBSBS",

@@ -3,7 +3,7 @@ package server
 import (
 	"io"
 
-	"github.com/suvrick/go-kiss-server/game/packets/decode"
+	"github.com/r1soX/kissme/game/packets/decode"
 )
 
 // PLAYERS_KISSES(218); [player_id:I, kisses:I]

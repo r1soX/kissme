@@ -3,7 +3,7 @@ package ws
 import (
 	"fmt"
 
-	"github.com/suvrick/go-kiss-server/game/packets/client"
+	"github.com/r1soX/kissme/game/packets/client"
 )
 
 func (gs *GameSock) loginSend() {

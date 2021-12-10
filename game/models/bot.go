@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/suvrick/go-kiss-server/game/parser"
-	"github.com/suvrick/go-kiss-server/until"
+	"github.com/r1soX/kissme/game/parser"
+	"github.com/r1soX/kissme/until"
 	"gorm.io/gorm"
 )
 
@@ -74,7 +74,6 @@ type Bot struct {
 	LastUseDay string
 
 	Kisses int32
-	Gifts  int32
 	//
 	// Logger - массив записей
 	// `gorm:"type:text"`
@@ -100,14 +99,13 @@ func NewBot(url string) *Bot {
 		Result:  "WAIT_AUTHORIZATION",
 		Balance: 0,
 		Name:    "No name",
-		Avatar:  "ava.jpg",
+		Avatar:  "/css/ava.png",
 		Profile: "",
 
 		IsBonus:  false,
 		BonusDay: 0,
 
 		Kisses:      0,
-		Gifts:       0,
 		LoginParams: *parser.NewLoginParams(url),
 		Logger:      make([]LoggerLine, 0),
 		LastUseDay:  time.Now().Format(until.TIME_FORMAT),
@@ -133,15 +131,13 @@ func NewBotWhitProxy(url string, proxy string) *Bot {
 		Result:  "WAIT_AUTHORIZATION",
 		Balance: 0,
 		Name:    "No name",
-		Avatar:  "ava.jpg",
+		Avatar:  "/css/ava.png",
 		Profile: "",
 
 		IsBonus:  false,
 		BonusDay: 0,
 
 		Kisses: 0,
-
-		Gifts: 0,
 
 		LoginParams: *parser.NewLoginParams(url),
 
@@ -161,12 +157,11 @@ func NewBotWhitProxy(url string, proxy string) *Bot {
 
 // ToString ...
 func (bot *Bot) ToString() string {
-	return fmt.Sprintf("Bot:\n Name: %v\n InnerID:  %v\n Balance: %v\n Kisses: %v\n Gifts: %v\n Result: %v\n IsBonus: %v\n Bonus: %v\n Avatar: %v\n Profile: %v\n\nLoginParams:\n Social: %v\n LoginID: %v\n Token: %v\n Token2:%v\n",
+	return fmt.Sprintf("Bot:\n Name: %v\n InnerID:  %v\n Balance: %v\n Kisses: %v\n Result: %v\n IsBonus: %v\n Bonus: %v\n Avatar: %v\n Profile: %v\n\nLoginParams:\n Social: %v\n LoginID: %v\n Token: %v\n Token2:%v\n",
 		bot.Name,
 		bot.InnerID,
 		bot.Balance,
 		bot.Kisses,
-		bot.Gifts,
 		bot.Result,
 		bot.IsBonus,
 		bot.BonusDay,
@@ -195,13 +190,6 @@ const (
 func (bot *Bot) LogINFO(methodName, msg string)  { bot.Log(INFO, methodName, msg) }
 func (bot *Bot) LogERROR(methodName, msg string) { bot.Log(ERROR, methodName, msg) }
 func (bot *Bot) Log(t LogType, methodName, msg string) {
-
-	switch t {
-	case INFO:
-		msg = fmt.Sprintf("INFO >> (%s) %s", methodName, msg)
-	case ERROR:
-		msg = fmt.Sprintf("ERROR >> (%s) %s", methodName, msg)
-	}
 
 	//fmt.Println(msg)
 	bot.Logger = append(bot.Logger, LoggerLine{

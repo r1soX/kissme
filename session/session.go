@@ -2,8 +2,8 @@ package session
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/suvrick/go-kiss-server/model"
-	"github.com/suvrick/go-kiss-server/repositories"
+	"github.com/r1soX/kissme/model"
+	"github.com/r1soX/kissme/repositories"
 )
 
 // Accounts ...

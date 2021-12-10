@@ -4,10 +4,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/suvrick/go-kiss-server/model"
-	"github.com/suvrick/go-kiss-server/repositories"
-	"github.com/suvrick/go-kiss-server/session"
-	"github.com/suvrick/go-kiss-server/until"
+	"github.com/r1soX/kissme/model"
+	"github.com/r1soX/kissme/repositories"
+	"github.com/r1soX/kissme/session"
+	"github.com/r1soX/kissme/until"
 )
 
 type UserService struct {

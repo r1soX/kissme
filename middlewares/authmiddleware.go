@@ -2,9 +2,9 @@ package middlewares
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/suvrick/go-kiss-server/errors"
-	"github.com/suvrick/go-kiss-server/session"
-	"github.com/suvrick/go-kiss-server/until"
+	"github.com/r1soX/kissme/errors"
+	"github.com/r1soX/kissme/session"
+	"github.com/r1soX/kissme/until"
 )
 
 // AuthMiddleware ...
