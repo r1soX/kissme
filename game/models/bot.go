@@ -99,7 +99,7 @@ func NewBot(url string) *Bot {
 		Result:  "WAIT_AUTHORIZATION",
 		Balance: 0,
 		Name:    "No name",
-		Avatar:  "ava.png",
+		Avatar:  "http://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Clipart.png",
 		Profile: "",
 
 		IsBonus:  false,
@@ -131,7 +131,7 @@ func NewBotWhitProxy(url string, proxy string) *Bot {
 		Result:  "WAIT_AUTHORIZATION",
 		Balance: 0,
 		Name:    "No name",
-		Avatar:  "ava.png",
+		Avatar:  "http://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Clipart.png",
 		Profile: "",
 
 		IsBonus:  false,

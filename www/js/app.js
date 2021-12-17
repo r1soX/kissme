@@ -32,7 +32,7 @@ var app = new Vue({
     },
     watch: {
         task_id: function (n, o) {
-            this.hideTask = !["1", "6", "7"].includes(this.task_id)
+            this.hideTask = !["1", "7", "8"].includes(this.task_id)
         }
     },
     computed: {
@@ -145,6 +145,21 @@ var app = new Vue({
                     return
                 }
                 case "5": {
+                    //Возд.цем
+                    //[56, 7, 50164698, 10009, 0, 1, 4]
+                    let prize = {
+                        good_id: 56,
+                        cost: 7,
+                        target_id: parseInt(this.target_id, 10),
+                        data: 10009,
+                        price_type: 0,
+                        count: parseInt(this.count, 10),
+                        screen_type: 4
+                    }
+                    this.prizeBotSend(prize)
+                    return
+                }
+                case "6": {
                     //Фляжка
                     //[2, 1, 48273340, 10125, 0, 4, "dcddfb78c71cb85d2e7cd978d46f2ee5", "{"category": 70, "screen": 4}"]
                     let prize = {
@@ -159,17 +174,17 @@ var app = new Vue({
                     this.prizeBotSend(prize)
                     return
                 }
-                case "6": {
+                case "7": {
                     this.removeBotSend()
 
                     return
                 }
-                case "7": {
+                case "8": {
                     this.updateBotSend()
                     console.log(this.updateBotSend())
                     return
                 }
-                case "8": {
+                case "9": {
                     this.viewBotSend()
                     return
                 }
